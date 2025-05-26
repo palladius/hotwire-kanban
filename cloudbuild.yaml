@@ -37,6 +37,16 @@ steps:
   #       DATABASE_URL=$$CB_DATABASE_URL \
   #       bin/rails runner \
   #       'puts Card.count'
+  - id: "AutoTag with latest version (TODO)"
+    name: "gcr.io/google.com/cloudsdktool/cloud-sdk"
+    entrypoint: /bin/bash
+    secretEnv:
+    - "CB_DATABASE_URL"
+    #- "_IMAGE_NAME"
+    args:
+      - "-c"
+      - |
+        bin/docker-auto-tag.sh "${_IMAGE_NAME}"
 
 
   - id: "deploy to Cloud Run DEV (sqlite3)"
