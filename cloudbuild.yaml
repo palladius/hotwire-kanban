@@ -61,6 +61,7 @@ steps:
         --update-secrets OCCASIONAL_MESSAGE=RiccardoCBDevProva2US \
         --platform managed \
         --project ${PROJECT_ID} \
+        --port="3000" \
         --max-instances 2 \
         --cpu 2 \
         --memory 2Gi
