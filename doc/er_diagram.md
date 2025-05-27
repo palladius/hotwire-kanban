@@ -1,4 +1,4 @@
-# Entity Relationship Diagram
+# Entity Relationship Diagram (Gemini generated)
 
 This document explains the main models in the application and visualizes their relationships using a Mermaid.js Entity Relationship Diagram.
 
@@ -35,3 +35,9 @@ erDiagram
         int position
     }
 ```
+
+## Prompt I've used for this
+
+Prompt:
+
+*“Create a doc/er_diagram.md file which contains an explanation of what each model in app/models/ does, and fill it with a mermaid.js E/R diagram so it visualizes beautifully on github while also be easy to maintain as text”.*
